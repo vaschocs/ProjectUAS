@@ -8,18 +8,14 @@
 
     <ImageButton
         android:id="@+id/logoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginBottom="604dp"
+        android:layout_width="364dp"
+        android:layout_height="404dp"
+        android:src="@drawable/img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:layout_constraintVertical_bias="0.335" />
 
     <TextView
         android:id="@+id/siText"
@@ -32,20 +28,10 @@
         android:text="SI-KRS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoButton" />
+        app:layout_constraintTop_toBottomOf="@+id/logoButton"
+        app:layout_constraintVertical_bias="0.276" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="91dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/siText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
