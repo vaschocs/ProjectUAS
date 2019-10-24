@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectuas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Model.MKRSActivity"></activity>
+        <activity android:name=".Adapter.AKRSActivity" />
+        <activity android:name=".Model.MMatkulActivity" />
+        <activity android:name=".Adapter.AMatkulActivity" />
+        <activity android:name=".Model.MMahasiswaActivity" />
+        <activity android:name=".Adapter.AMahasiswaActivity" />
+        <activity android:name=".Model.MDosenActivity" />
+        <activity android:name=".Adapter.ADosenActivity" />
+        <activity android:name=".CRUDKRS.LihatKRSActivity" />
+        <activity android:name=".CRUDKRS.InsertUpdateKRSActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CRUDMatkul.LihatMatkulActivity"/>
+
+        <activity android:name=".CRUDMatkul.InsertUpdateMatkulActivity"/> >
+
+        <activity android:name=".CRUDDataMahasiswa.LihatDataMHSActivity" />
+        <activity android:name=".CRUDDataMahasiswa.InsertUpdateDataDiriMHSActivity" />
+        <activity android:name=".CRUDDataDosen.LihatDataDosenActivity" />
+        <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" />
+        <activity android:name=".DaftarKelasActivity" />
+        <activity android:name=".DaftarKRSActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".HomeScreenAdminActivity" />
+        <activity android:name=".DataDiriActivity" />
+        <activity android:name=".HomeScreenDsnActivity" />
+        <activity android:name=".LoginScreenActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
