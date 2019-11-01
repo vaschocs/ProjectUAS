@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity"></activity>
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".Model.MKRSActivity" />
         <activity android:name=".Adapter.AKRSActivity" />
         <activity android:name=".Model.MMatkulActivity" />
@@ -27,17 +28,21 @@
         <activity android:name=".CRUDDataDosen.LihatDataDosenActivity" />
         <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" />
         <activity android:name=".DaftarKelasActivity" />
-        <activity android:name=".HomeScreenAdminActivity" />
-        <activity android:name=".HomeScreenDsnActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".HomeScreenAdminActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".LoginScreenActivity" />
-        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeScreenDsnActivity"/>
+
+        <activity android:name=".LoginScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
     </application>
 
 </manifest>

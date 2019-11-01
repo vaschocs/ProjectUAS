@@ -3,11 +3,14 @@ package com.example.projectuas;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private int waktu_loading=4000;
+    private int waktu_loading = 4000;
 
     //4000=4 detik
 
@@ -22,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
                 //setelah loading maka akan langsung berpindah ke home activity
-                Intent home=new Intent(MainActivity.this, LoginScreenActivity.class);
+                Intent home = new Intent(MainActivity.this, LoginScreenActivity.class);
                 startActivity(home);
                 finish();
 
             }
-        },waktu_loading);
+        }, waktu_loading);
+
+
     }
+
 }

@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.projectuas.CRUDDataDosen.InsertUpdateDataDiriDosenActivity;
 import com.example.projectuas.CRUDDataDosen.LihatDataDosenActivity;
+import com.example.projectuas.CRUDKRS.InsertUpdateKRSActivity;
 import com.example.projectuas.CRUDKRS.LihatKRSActivity;
+import com.example.projectuas.CRUDMatkul.InsertUpdateMatkulActivity;
 import com.example.projectuas.CRUDMatkul.LihatMatkulActivity;
 
 public class HomeScreenDsnActivity extends AppCompatActivity {
@@ -27,7 +30,7 @@ ImageButton dklsBtn;
         ddBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i = new Intent(HomeScreenDsnActivity.this, LihatDataDosenActivity.class);
+                Intent i = new Intent(HomeScreenDsnActivity.this, InsertUpdateDataDiriDosenActivity.class);
                 startActivity(i);
             }
         });
@@ -35,14 +38,14 @@ ImageButton dklsBtn;
         dkrsBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i = new Intent(HomeScreenDsnActivity.this, LihatKRSActivity.class);
+                Intent i = new Intent(HomeScreenDsnActivity.this, InsertUpdateKRSActivity.class);
                 startActivity(i);
             }
         });
-        ddBtn.setOnClickListener(new View.OnClickListener(){
+        dklsBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i = new Intent(HomeScreenDsnActivity.this, LihatMatkulActivity.class);
+                Intent i = new Intent(HomeScreenDsnActivity.this, InsertUpdateMatkulActivity.class);
                 startActivity(i);
             }
         });
