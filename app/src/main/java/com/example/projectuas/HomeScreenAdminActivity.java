@@ -18,7 +18,7 @@ import com.example.projectuas.CRUDDataMahasiswa.InsertUpdateDataDiriMHSActivity;
 import com.example.projectuas.CRUDDataMahasiswa.LihatDataMHSActivity;
 import com.example.projectuas.CRUDKRS.InsertUpdateKRSActivity;
 import com.example.projectuas.CRUDKRS.LihatKRSActivity;
-
+import com.example.projectuas.CRUDMatkul.LihatMatkulActivity;
 
 
 public class HomeScreenAdminActivity extends AppCompatActivity {
@@ -32,7 +32,9 @@ public class HomeScreenAdminActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen_admin);
 
         ImageButton ddaBtn = (ImageButton) findViewById(R.id.ddaBtn);
+        ImageButton kelolakrsa = (ImageButton) findViewById(R.id.kelolakrsaBtn);
         ImageButton dkrsa = (ImageButton) findViewById(R.id.dkrsaBtn);
+        ImageButton dklsa = (ImageButton) findViewById(R.id.dklsaBtn);
         ImageButton dmhsa = (ImageButton) findViewById(R.id.dmhsaBtn);
         Button btnlogout = (Button) findViewById(R.id.btnlogout);
 
@@ -68,7 +70,7 @@ public class HomeScreenAdminActivity extends AppCompatActivity {
         dkrsa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomeScreenAdminActivity.this, InsertUpdateKRSActivity.class);
+                Intent i = new Intent(HomeScreenAdminActivity.this, LihatKRSActivity.class);
                 startActivity(i);
             }
         });
@@ -77,6 +79,23 @@ public class HomeScreenAdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(HomeScreenAdminActivity.this, InsertUpdateDataDiriMHSActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+        kelolakrsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeScreenAdminActivity.this, InsertUpdateKRSActivity.class);
+                startActivity(i);
+            }
+        });
+
+        dklsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeScreenAdminActivity.this, LihatMatkulActivity.class);
                 startActivity(i);
             }
         });
