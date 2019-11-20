@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +50,12 @@ public class HomeScreenAdminActivity extends AppCompatActivity {
                 }
             }).setPositiveButton("Yes",new DialogInterface.OnClickListener() {
                 public void onClick (DialogInterface dialog,int which){
+                    SharedPreferences prefs = HomeScreenAdminActivity.this.getSharedPreferences("prefs_file",MODE_PRIVATE);
+                    String statusLogin = prefs.getString("isLogin",null);
+                    SharedPreferences.Editor edit = prefs.edit();
+                    edit.putString("isLogin", null);
+                    edit.commit();
+
                     Intent i = new Intent(HomeScreenAdminActivity.this, LoginScreenActivity.class);
                     startActivity(i);
                 }
