@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintVertical_bias="0.281"
         tools:srcCompat="@tools:sample/avatars[0]" />
 
     <androidx.appcompat.widget.Toolbar
@@ -26,9 +26,9 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="KRS SI - HAI ADMIN"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="5dp" />
+        app:title="KRS SI - HAI DOSEN"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/btnlogout"
@@ -47,24 +47,26 @@
         android:id="@+id/ddBtn"
         android:layout_width="101dp"
         android:layout_height="111dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dkrsaBtn"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintVertical_bias="0.283"
         tools:srcCompat="@tools:sample/avatars[4]" />
 
     <ImageButton
         android:id="@+id/dmhsBtn"
         android:layout_width="104dp"
         android:layout_height="124dp"
+        android:layout_marginEnd="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/kelolakrsaBtn"
         app:layout_constraintTop_toBottomOf="@+id/dftrkrstextView"
-        app:layout_constraintVertical_bias="0.218"
+        app:layout_constraintVertical_bias="0.219"
         tools:srcCompat="@tools:sample/avatars[3]" />
 
     <ImageButton
@@ -74,7 +76,7 @@
         android:layout_marginTop="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datadiritextView"
         app:layout_constraintVertical_bias="0.0"
@@ -84,49 +86,53 @@
         android:id="@+id/dftrmhstextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
         android:text="Daftar Mahasiswa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toEndOf="@+id/kelolakrstextView"
         app:layout_constraintTop_toBottomOf="@+id/dmhsaBtn"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.201" />
 
     <TextView
         android:id="@+id/kelolakrstextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
         android:text="Kelola KRS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kelolakrsaBtn"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.201" />
 
     <ImageButton
         android:id="@+id/dklsBtn"
         android:layout_width="103dp"
         android:layout_height="111dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toEndOf="@+id/dkrsaBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277"
+        app:layout_constraintVertical_bias="0.28"
         tools:srcCompat="@tools:sample/avatars[6]" />
 
     <TextView
         android:id="@+id/datadiritextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
         android:text="Data Diri"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintEnd_toStartOf="@+id/dftrkrstextView"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ddaBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ddBtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -136,9 +142,9 @@
         android:text="Daftar KRS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toEndOf="@+id/datadiritextView"
-        app:layout_constraintTop_toBottomOf="@+id/dkrsaBtn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dkrsBtn"
         app:layout_constraintVertical_bias="0.065" />
 
     <TextView
@@ -148,9 +154,9 @@
         android:text="Lihat Kelas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toEndOf="@+id/dftrkrstextView"
-        app:layout_constraintTop_toBottomOf="@+id/dklsaBtn"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintTop_toBottomOf="@+id/dklsBtn"
+        app:layout_constraintVertical_bias="0.07" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

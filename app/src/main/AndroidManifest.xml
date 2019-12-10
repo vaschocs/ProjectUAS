@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.projectuas">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+        <activity android:name=".Model.DefaultResult"></activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Model.MKRSActivity" />
         <activity android:name=".Adapter.AKRSActivity" />
         <activity android:name=".Model.MMatkulActivity" />
@@ -32,17 +31,25 @@
         <activity android:name=".CRUDMatkul.InsertUpdateMatkulActivity" />
         <activity android:name=".CRUDDataMahasiswa.LihatDataMHSActivity" />
         <activity android:name=".CRUDDataMahasiswa.InsertUpdateDataDiriMHSActivity" />
-        <activity android:name=".CRUDDataDosen.LihatDataDosenActivity" />
-        <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" />
+        <activity android:name=".CRUDDataDosen.LihatDataDosenActivity"/>
+
+        <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".DaftarKelasActivity" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".HomeScreenAdminActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".HomeScreenDsnActivity"/>
-        <activity android:name=".LoginScreenActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".HomeScreenAdminActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-
+        <activity android:name=".HomeScreenDsnActivity" />
+        <activity
+            android:name=".LoginScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

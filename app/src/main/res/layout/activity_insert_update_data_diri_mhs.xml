@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/nimTxt"
-        android:layout_width="140dp"
-        android:layout_height="22dp"
+        android:layout_width="131dp"
+        android:layout_height="21dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -33,15 +33,15 @@
         android:text="NIM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/namaTxt"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.056" />
 
     <TextView
         android:id="@+id/alamatTxt"
-        android:layout_width="146dp"
-        android:layout_height="23dp"
+        android:layout_width="131dp"
+        android:layout_height="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -49,14 +49,14 @@
         android:text="Alamat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nimTxt"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintTop_toBottomOf="@+id/nidnTxt"
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
         android:id="@+id/emailTxt"
-        android:layout_width="141dp"
+        android:layout_width="131dp"
         android:layout_height="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -68,14 +68,13 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alamatTxt"
-        app:layout_constraintVertical_bias="0.021" />
-
+        app:layout_constraintVertical_bias="0.048" />
 
 
     <TextView
-        android:id="@+id/fotoTxt"
-        android:layout_width="139dp"
-        android:layout_height="19dp"
+        android:id="@+id/txtFoto"
+        android:layout_width="131dp"
+        android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -83,48 +82,32 @@
         android:text="Foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailTxt"
-        app:layout_constraintVertical_bias="0.031" />
-
-    <EditText
-        android:id="@+id/namaETxt"
-        android:layout_width="107dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toEndOf="@+id/namaTxt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintTop_toBottomOf="@+id/gelarTxt"
+        app:layout_constraintVertical_bias="0.097" />
 
     <EditText
         android:id="@+id/nimEtxt"
-        android:layout_width="106dp"
-        android:layout_height="22dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/nimTxt"
         app:layout_constraintTop_toBottomOf="@+id/namaETxt"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <EditText
         android:id="@+id/alamatETxt"
-        android:layout_width="105dp"
-        android:layout_height="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -136,12 +119,12 @@
         app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toEndOf="@+id/alamatTxt"
         app:layout_constraintTop_toBottomOf="@+id/nimEtxt"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.017" />
 
     <EditText
         android:id="@+id/emailEtxt"
-        android:layout_width="106dp"
-        android:layout_height="26dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -150,11 +133,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/FotoETxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/emailTxt"
         app:layout_constraintTop_toBottomOf="@+id/alamatETxt"
-        app:layout_constraintVertical_bias="0.02" />
-
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/browseButton"
@@ -163,10 +145,11 @@
         android:text="Browse..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FotoETxt"
         app:layout_constraintVertical_bias="0.05" />
+
 
 
     <Button
@@ -185,21 +168,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.824" />
 
+    <EditText
+        android:id="@+id/namaETxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/namaTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
 
     <EditText
         android:id="@+id/FotoETxt"
-        android:layout_width="109dp"
-        android:layout_height="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="424dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toEndOf="@+id/fotoTxt"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/txtFoto"
         app:layout_constraintTop_toBottomOf="@+id/gelarETxt"
         app:layout_constraintVertical_bias="0.02" />
 

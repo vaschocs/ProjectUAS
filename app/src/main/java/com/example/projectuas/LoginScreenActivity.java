@@ -27,40 +27,32 @@ public class LoginScreenActivity extends AppCompatActivity {
         email = (EditText) findViewById(R.id.txtEmail);
         pass = (EditText) findViewById(R.id.txtPass);
         login = (Button) findViewById(R.id.btnlogin);
-        sharedPreferences = getSharedPreferences("loginref", MODE_PRIVATE);
-        editor = sharedPreferences.edit();
+
         login.setOnClickListener(new View.OnClickListener() {
+            SharedPreferences prefs = LoginScreenActivity.this.getSharedPreferences("prefs_file",MODE_PRIVATE);
+            String statusLogin = prefs.getString("isLogin",null);
+            SharedPreferences.Editor edit = prefs.edit();
             @Override
             public void onClick(View view) {
-                login();
+                String emaail = email.getText().toString();
+                String password = pass.getText().toString();
+                if (emaail.contains("@si.ukdw.ac.id")) {
+                    edit.putString("isLogin", "Mhs");
+                    edit.commit();
+                    Intent i = new Intent(LoginScreenActivity.this, HomeScreenAdminActivity.class);
+                    startActivity(i);
+
+
+                } else if (emaail.contains("@staff.ac.id")) {
+                    edit.putString("isLogin", "Admin");
+                    edit.commit();
+                    Intent i = new Intent(LoginScreenActivity.this, HomeScreenDsnActivity.class);
+                    startActivity(i);
+
+                } else {
+                    Toast.makeText(LoginScreenActivity.this, "error", Toast.LENGTH_LONG).show();
+                }
             }
         });
-        savelogin = sharedPreferences.getBoolean("savelogin", true);
-        if (savelogin == true) {
-            email.setText(sharedPreferences.getString("username", null));
-            pass.setText(sharedPreferences.getString("password", null));
-        }
     }
-
-
-    public void login() {
-        String emaail = email.getText().toString();
-        String password = pass.getText().toString();
-        if (emaail.contains("@si.ukdw.ac.id") ) {
-            editor.putString("isLogin","Mhs");
-            editor.commit();
-            Intent i = new Intent(LoginScreenActivity.this, HomeScreenAdminActivity.class);
-            startActivity(i);
-
-
-        } else if (emaail.contains("@staff.ac.id")) {
-            editor.putString("isLogin","Admin");
-            editor.commit();
-            Intent i = new Intent(LoginScreenActivity.this, HomeScreenDsnActivity.class);
-            startActivity(i);
-
-        } else {
-                Toast.makeText(this, "error", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
+}
