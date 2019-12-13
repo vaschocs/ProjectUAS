@@ -247,7 +247,7 @@ AlertDialog.Builder builder = new AlertDialog.Builder(InsertUpdateDataDiriDosenA
             gelarDosen.setError("Silahkan mengisi gelar Dosen");
             valid = false;
         }
-      
+
 
         return valid;
     }

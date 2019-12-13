@@ -30,16 +30,17 @@
         <activity android:name=".CRUDMatkul.LihatMatkulActivity" />
         <activity android:name=".CRUDMatkul.InsertUpdateMatkulActivity" />
         <activity android:name=".CRUDDataMahasiswa.LihatDataMHSActivity" />
-        <activity android:name=".CRUDDataMahasiswa.InsertUpdateDataDiriMHSActivity" />
-        <activity android:name=".CRUDDataDosen.LihatDataDosenActivity"/>
-
-        <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" >
+        <activity android:name=".CRUDDataMahasiswa.InsertUpdateDataDiriMHSActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CRUDDataDosen.LihatDataDosenActivity"/>
+
+        <activity android:name=".CRUDDataDosen.InsertUpdateDataDiriDosenActivity" />
+
         <activity android:name=".DaftarKelasActivity" />
         <activity android:name=".MainActivity" />
         <activity
