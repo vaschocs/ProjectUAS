@@ -21,21 +21,16 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class ADosenActivity extends RecyclerView.Adapter<ADosenActivity.ViewHolder> {
-    Context context;
-    ArrayList<MDosenActivity> dosenArrayList;
-    //Array tambahan untuk picture
-    // public static List<String> ic = new ArrayList<String>();
-
-
+    private Context context;
+    private ArrayList<MDosenActivity> dosenArrayList;
     public ADosenActivity(ArrayList<MDosenActivity> dosenArrayList) {
         this.dosenArrayList = dosenArrayList;
+
+
     }
 
 
-//
-//    public ViewHolder(View view){
-//        super(view);
-//        txtTitle = view.findViewById(R.id.txt_title);
+
 
 
     @NonNull
@@ -50,18 +45,14 @@ public class ADosenActivity extends RecyclerView.Adapter<ADosenActivity.ViewHold
 
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        //LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(100*i, 100*i);//menghubungkan data, data dari konstruktor .
-
-
-        //holder.imgdos.setImageResource(dosenArrayList.get(position).getFoto());
-        holder.imgdos.getLayoutParams().width = 100;
-        holder.imgdos.getLayoutParams().height = 100;
-        if (dosenArrayList.get(position).getAndroidImage() != null) {
-            Picasso.with(this.context)
-                    .load("https://kpsi.fti.ukdw.ac.id/progmob/" + dosenArrayList.get(position))
-
-                            .into(holder.imgdos);
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.imgdos.getLayoutParams().width=150;
+        holder.imgdos.getLayoutParams().height=150;
+        if(dosenArrayList.get(position).getAndroidImage()!=null){
+            Picasso.with(this.context).
+                    load("https://kpsi.fti.ukdw.ac.id/progmob/"+dosenArrayList.get(position).getAndroidImage())
+//                    .transform(new CropCircleTransformation())//pakai library tambahan jp.picasso di gradle-> utk ubah bentuk gambar crop lingkaran
+                    .into(holder.imgdos);
         }
 
         holder.txtNIDN.setText(dosenArrayList.get(position).getNidnDsn());

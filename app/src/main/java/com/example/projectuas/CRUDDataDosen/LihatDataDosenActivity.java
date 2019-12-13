@@ -114,7 +114,7 @@ public class LihatDataDosenActivity extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         MDosenActivity dosen = dosenList.get(item.getGroupId());
         if (item.getTitle() == "Ubah Data Dosen") {
-            Intent intent = new Intent(LihatDataDosenActivity.this, InsertUpdateDataDiriDosenActivity.class);
+            Intent intent = new Intent(LihatDataDosenActivity.this, LihatDataDosenActivity.class);
             intent.putExtra("id_dosen", dosen.getIdDsn());
             intent.putExtra("nama_dosen", dosen.getNamaDsn());
             intent.putExtra("nidn_dosen", dosen.getNidnDsn());
